@@ -47,7 +47,7 @@ class SearchScreen extends StatelessWidget {
                       ),
                       ListView.builder(itemBuilder: (context, index){
                         return Padding(padding: EdgeInsets.only(left: 150,top: 10),
-                        child: SearchResultComponent(),);
+                        child: SearchResultComponent(link: 'ghh'),);
                       })
                     ],
                   );
