@@ -22,7 +22,7 @@ class SearchTab extends StatelessWidget {
             Icon(
               icon,
               size: 18,
-              color: isActive! ? blueColor : Colors.grey,
+              color: isActive ? blueColor : Colors.grey,
             ),
             const SizedBox(
               width: 3,

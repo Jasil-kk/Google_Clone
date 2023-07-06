@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_clone/widgets/mobile/mobile_footer.dart';
-import 'package:google_clone/widgets/translation_buttons.dart';
-import 'package:google_clone/widgets/web/search_buttons.dart';
 import '../colors.dart';
 import '../widgets/search.dart';
 
@@ -12,6 +10,7 @@ class MobileScreenLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: backgroundColor,
@@ -82,11 +81,6 @@ class MobileScreenLayout extends StatelessWidget {
                     SizedBox(
                       height: 20.0,
                     ),
-                    SearchButtons(),
-                    SizedBox(
-                      height: 20.0,
-                    ),
-                    TranslationButtons(),
                   ],
                 ),
                 const MobileFooter(),

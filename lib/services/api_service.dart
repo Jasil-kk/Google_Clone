@@ -4,7 +4,7 @@ import '../config/api_keys.dart';
 import 'dart:convert';
 
 class ApiService {
-  bool isDummyData = true;
+  bool isDummyData = false;
 
   Future<Map<String, dynamic>> fetchData(
       {required String queryTerm, String start = "0"}) async {
